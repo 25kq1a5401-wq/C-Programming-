@@ -8,16 +8,16 @@ if(num == 0)
 }  
 int digits[10];
 int i = 0;
-while(num>0)
+while(num > 0)
 {
-  digits[i]=num%10;
-  num / = 10;
+  digits[i]=num % 10;
+  num /= 10;
   i++;
 }  
-printf("Individual digits:");
-for(int j = i-1;j >= 0;j--)
+printf("Individual digits: ");
+for(int j = i - 1;j >= 0;j--)
 {
-  printf("%d", digits[j]);
+  printf("%d ",digits[j]);
 }
 printf("\n");
 }  
