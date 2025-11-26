@@ -10,10 +10,10 @@ int calculateSum(int n)
 }
 int main()
 {
- int n, result;
- printf("Enter a positive integer");
- scanf("%d" &n);
+ int n,result;
+ printf("Enter a positive integer (n):");
+ scanf("%d",&n);
  result=calculateSum(n);
- printf("The sum of numbers from 1 to n");
+ printf("The sum of numbers from 1 to %d is: %d\n",n,result);
  return 0;
 } 
