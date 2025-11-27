@@ -2,7 +2,6 @@
 #include <string.h>
 
 int main() {
-    // Menu items (you can extend this list)
     const char *items[] = {
         "Amul Chs",
         "Five Star Chs",
@@ -19,13 +18,13 @@ int main() {
     memset(quantities, 0, sizeof(quantities));
 
     printf("=== Super Market Billing ===");
-    // Show menu
+
     for (int i = 0; i < n; ++i) {
         printf("\n%d. %s Rs.%d", i + 1, items[i], price[i]);
     }
     printf("\n");
 
-    // Loop to add items
+
     while (cont == 'Y' || cont == 'y') {
         printf("\nEnter your Item number and Quantity: ");
         if (scanf("%d %d", &choice, &qty) != 2) {
@@ -46,7 +45,7 @@ int main() {
         scanf(" %c", &cont);
     }
 
-    // Print the bill
+    
     printf("\n=== Your Bill ===");
     int total = 0;
     for (int i = 0; i < n; ++i) {
