@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{  
+    float c,f;
+    clrscr();
+    printf("Enter Temperature \n");
+    scanf("%f",&c);
+    f=(c*9/5)+32;
+    printf("Temperature in Fahrenheit is:%f",f);
+    getch();
+ }   
+         
